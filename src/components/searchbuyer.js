@@ -78,35 +78,35 @@ class SearchBuyer extends React.Component{
 		var Arr=[]
 		var buyers=this.state.data
 			Arr=this.state.newdata.map((items,id)=>{
-				return (<div key={id} class="movie-card">
-		<div class="movie-content">
-			<div class="movie-content-header">
+				return (<div key={id} className="movie-card">
+		<div className="movie-content">
+			<div className="movie-content-header">
 				<a href="#">
-					<h3 class="movie-title">{items.buyer_name}</h3>
+					<h3 className="movie-title">{items.buyer_name}</h3>
 				</a>
-				<div class="info-section">
+				<div className="info-section">
 					<label>Weight</label>
 					<span>{items.weight_gsm}</span>
 				</div>
-				<div class="info-section">
+				<div className="info-section">
 					<label>lead_time</label>
 					<span>{items.lead_time}</span>
 				</div>
 			</div>
-			<div class="movie-info">
-				<div class="info-section">
+			<div className="movie-info">
+				<div className="info-section">
 					<label>Product Name</label>
 					<span>{items.product_name}</span>
 				</div>
-				<div class="info-section">
+				<div className="info-section">
 					<label>price</label>
 					<span>{items.price_rs}</span>
 				</div>
-				<div class="info-section">
+				<div className="info-section">
 					<label>Quantity</label>
 					<span>{items.quantity}</span>
 				</div>
-				<div class="info-section">
+				<div className="info-section">
 					<label>Product id</label>
 					<span>{items.product_id}</span>
 				</div>
@@ -119,10 +119,10 @@ class SearchBuyer extends React.Component{
         return(
             <div>
                 <div style={{margin:"auto",maxWidth:500,textAlign:'center'}}>
-      			   <form class="example">
+      			   <form className="example">
       			      <div style={{textAlign:'center'}}>
        			        <input type="text" placeholder="Search the Buyer_Name or Product_Name here" name="search2" onChange={(e)=>this.onChangevalue(e)}/>
-       			        <button type="button" ><i class="fa fa-search"></i></button>
+       			        <button type="button" ><i className="fa fa-search"></i></button>
      			      </div>
 					   <br/> 
         			   <button type="button"style={{width:200}} onClick={this.sortByPriceAsc}>
@@ -133,7 +133,7 @@ class SearchBuyer extends React.Component{
         			  </button>
     			   </form>
     			</div>
-              <div class="container">
+              <div className="container">
 	                   {Arr}
 	           </div>
 			</div>
