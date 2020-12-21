@@ -40,7 +40,7 @@ class SearchBuyer extends React.Component{
 
 	componentDidMount(){
 		const option=this;
-		axios.get('http://localhost:3001/api/v1/buyers/listbuyers')
+		axios.get('http://d50ed78b4f8a.ngrok.io/api/v1/buyers/listbuyers')
         .then((response) => {
 	     option.setState({data:response.data.data,newdata:response.data.data})
   });
